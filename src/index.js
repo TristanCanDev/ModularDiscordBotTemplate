@@ -111,4 +111,16 @@ client.on(Events.InteractionCreate, async interaction => {
     }
 })
 
+// Handle message events
+client.on(Events.MessageCreate, async message => {
+    let commands = fs.readdirSync('./commands');
+
+    commands.forEach(command => {
+        if(fs.readdirSync(`./commands/${command}`).includes('onMessage.js')){
+            let { Main } = require(`./commands/${command}/onMessage.js`);
+            Main(client, message, MessageFlags);
+        }
+    });
+})
+
 client.login(token);
