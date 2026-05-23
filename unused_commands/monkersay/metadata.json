@@ -1,0 +1,20 @@
+{
+    "name":"monkersay",
+    "description":"monker do",
+    "entry":"index",
+    "type": "SLASH",
+    "options":{
+        "input":{
+            "type": "STRING",
+            "name": "input",
+            "description": "What monke say",
+            "isRequired": false
+        },
+        "attachments":{
+            "type": "ATTACHMENT",
+            "name": "attachments",
+            "description": "Monkey attachments",
+            "isRequired": false
+        }
+    }
+}

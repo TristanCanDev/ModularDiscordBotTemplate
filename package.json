@@ -1,0 +1,15 @@
+{
+  "name": "modulardiscordbottemplate",
+  "version": "1.0.0",
+  "description": "To start, you'll open this project and see a couple files.",
+  "license": "ISC",
+  "author": "Tristan Bouchard",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4"
+  }
+}
